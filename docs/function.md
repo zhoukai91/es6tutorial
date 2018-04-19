@@ -84,7 +84,8 @@ function foo(x, x, y = 1) {
 ```javascript
 let x = 99;
 function foo(p = x + 1) {
-  console.log(p);
+  x = p;  // 更新x
+  console.log(p);
 }
 
 foo() // 100
